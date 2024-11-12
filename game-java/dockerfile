@@ -1,0 +1,9 @@
+FROM openjdk:11
+
+WORKDIR /xt/java-game
+
+COPY . /xt/java-game/
+
+RUN javac game.java
+
+CMD ["java", "game"]

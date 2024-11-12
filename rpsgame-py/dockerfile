@@ -1,0 +1,7 @@
+FROM python:alpine
+
+WORKDIR /xt/py-game
+
+COPY . /xt/py-game/
+
+CMD [ "python" , "RockPaperScissorsGame.py" ]
